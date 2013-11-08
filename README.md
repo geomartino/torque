@@ -7,7 +7,7 @@ CartoDB users can use this code right away. Specify your username/tablename and 
 
 Have fun!
 
-* Play with your own data: http://cartodb.github.com/torque/
+* Play with your own data: http://geomartino.github.com/torque/
 * The Guardian's Data Blog write-up of Royal Navy ships in WWI: http://www.guardian.co.uk/news/datablog/interactive/2012/oct/01/first-world-war-royal-navy-ships-mapped
 * A car in Nürburgring track: http://cartodb.github.com/torque/examples/car.html
 
