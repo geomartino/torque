@@ -982,8 +982,8 @@ exports.Profiler = Profiler;
 
     getKeySpan: function() {
       return {
-        start: this.options.start * 1000,
-        end: this.options.end * 1000,
+        start: this.options.start * 1000,   //new Date in miliseconds
+        end: this.options.end * 1000,       //new Date in miliseconds
         step: this.options.step,
         steps: this.options.steps
       };
