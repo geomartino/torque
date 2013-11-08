@@ -96,21 +96,22 @@
 
     <script id="default-style" type="text/torque-cartocss">
 #layer {
-  marker-width: 3; 
-  marker-fill: #FEE391; 
-  [value > 2] { marker-fill: #FEC44F; }
-  [value > 3] { marker-fill: #FE9929; }
-  [value > 4] { marker-fill: #EC7014; }
-  [value > 5] { marker-fill: #CC4C02; }
-  [value > 6] { marker-fill: #993404; }
-  [value > 7] { marker-fill: #662506; }
+  marker-width: 5; 
+  marker-fill: red;
+  [value > 206] { marker-fill: green; }
+  [value > 214] { marker-fill: blue; }
+  [value > 222] { marker-fill: red; }
   [frame-offset = 1] {
-    marker-width: 8;
-    marker-fill-opacity: 0.05;
+    marker-width: 4;
+    marker-fill-opacity: 0.5;
   }
-  [frame-offset = 2] { 
-    marker-width: 20;
-    marker-fill-opacity: 0.02;
+  [frame-offset = 2] {
+    marker-width: 2;
+    marker-fill-opacity: 0.5;
+  }
+  [frame-offset = 3] {
+    marker-width: 1;
+    marker-fill-opacity: 0.3;
   }
 }
     </script>
@@ -161,7 +162,7 @@
             column     : 'time',
             countby    : 'avg(ele)',
             resolution: 1,
-            steps: 800,
+            steps: 600,
             blendmode  : 'lighter',
             animationDuration: 30,
             map: map
@@ -297,7 +298,7 @@
       ];
         
       map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
-      map.setOptions({ styles: gmaps_style });
+      //map.setOptions({ styles: gmaps_style });
 
 
 
