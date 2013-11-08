@@ -156,10 +156,10 @@
         function init_torque(map, options) {
           // init torque layer
           torqueLayer = new torque.GMapsTorqueLayer(_.extend({
-            user       : 'viz2',
-            table      : 'ow',
-            column     : 'date',
-            countby    : 'count(cartodb_id)',
+            user       : 'geomartino',
+            table      : 'rk_gpx_2013_10_12_0854',
+            column     : 'time',
+            countby    : 'avg(ele)',
             resolution: 1,
             steps: 800,
             blendmode  : 'lighter',
