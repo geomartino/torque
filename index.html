@@ -50,7 +50,7 @@
           position: absolute;
           top: 100px;
           left: 50%;
-          color: white;
+          color: black;
           font-size: 31px;
           font-family: Georgia, serif;
         }
@@ -267,7 +267,8 @@
         torqueLayer.on('change:time', function(changes) {
           $("#torque-slider" ).slider({ value: changes.step });
           var month_year = changes.time.toString().substr(4).split(' ');
-          torqueTime.text(month_year[0] + " - " + month_year[2]);
+          //torqueTime.text(month_year[0] + " - " + month_year[2]);
+          torqueTime.text(month_year[0] + " " + month_year[1] + " " + month_year[2] + " " + month_year[3] );
         });
 
         // play-pause toggle
